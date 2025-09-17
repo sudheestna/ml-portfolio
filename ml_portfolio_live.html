@@ -5,33 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sudheestna | ML Engineer Portfolio</title>
   <style>
-    * {box-sizing: border-box; margin:0; padding:0;}
-    body {font-family: 'Segoe UI', sans-serif; line-height:1.6; color:#333; background:#f8f9fc;}
-    header {
-      background: linear-gradient(120deg,#2b5876,#4e4376);
-      color:#fff;
-      padding:60px 20px;
-      text-align:center;
-    }
-    header h1 {font-size:2.8rem; margin-bottom:10px;}
-    header p {font-size:1.2rem; opacity:0.9;}
-    nav {background:#fff; padding:10px 0; box-shadow:0 2px 4px rgba(0,0,0,0.05); position:sticky; top:0;}
-    nav ul {display:flex; justify-content:center; gap:30px; list-style:none;}
-    nav a {color:#333; text-decoration:none; font-weight:500;}
-    section {max-width:1000px; margin:50px auto; padding:0 20px;}
-    h2 {margin-bottom:20px; font-size:2rem; color:#2b5876;}
-    .skills {display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px;}
-    .card {
-      background:#fff; padding:25px; border-radius:12px;
-      box-shadow:0 4px 8px rgba(0,0,0,0.03);
-      transition:transform .25s ease;
-    }
-    .card:hover {transform:translateY(-4px);}
-    footer {background:#2b5876; color:#fff; text-align:center; padding:20px; margin-top:50px;}
-    a.btn {
-      display:inline-block; background:#2b5876; color:#fff; padding:10px 20px;
-      border-radius:6px; text-decoration:none; margin-top:10px;
-    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f0f4f8; color: #333; }
+    header { background: linear-gradient(120deg, #2b5876, #4e4376); color: #fff; padding: 80px 20px; text-align: center; }
+    header h1 { font-size: 3rem; margin-bottom: 10px; }
+    header p { font-size: 1.3rem; opacity: 0.9; }
+    nav { background: #fff; position: sticky; top:0; padding: 15px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    nav ul { display: flex; justify-content: center; list-style:none; gap: 30px; }
+    nav a { color: #333; text-decoration: none; font-weight: 500; }
+    nav a:hover { color: #2b5876; }
+    section { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+    h2 { font-size: 2.2rem; margin-bottom: 20px; color: #2b5876; }
+    .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 20px; }
+    .card { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.1); }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 30px; }
+    footer { background: #2b5876; color: #fff; text-align:center; padding: 30px 20px; margin-top: 60px; }
+    .btn { display: inline-block; background: #2b5876; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; margin-top: 20px; transition: background 0.3s; }
+    .btn:hover { background: #1f3d5a; }
   </style>
 </head>
 <body>
@@ -39,7 +30,7 @@
 <header>
   <h1>Sudheestna</h1>
   <p>Applied Machine Learning Engineer — Building reliable ML systems & fraud-resistant platforms</p>
-  <a class="btn" href="#projects">View My Work</a>
+  <a href="#projects" class="btn">See My Work</a>
 </header>
 
 <nav>
@@ -53,43 +44,39 @@
 
 <section id="about">
   <h2>About Me</h2>
-  <p>I’m an Applied ML Engineer with 3+ years’ experience designing data pipelines, evaluating models, and creating metrics for trustworthy AI.
-     I’ve delivered fraud-detection systems processing <strong>5M+ events/day</strong>, dashboards improving precision from 82 → 95%, and CI/CD flows cutting release times by 30%.
-     Now pursuing an <strong>M.S. in Business Analytics & AI</strong> at UT Dallas, I love building interpretable, production-ready ML systems.</p>
+  <p>I’m an ML Engineer with 3+ years of experience building data pipelines, evaluating ML models, and defining metrics for trustworthy AI. I’ve worked on fraud detection systems that process <strong>5M+ events/day</strong>, dashboards that improved model precision from 82% → 95%, and end-to-end CI/CD flows that reduced release cycles by ~30%. Currently pursuing an <strong>M.S. in Business Analytics & AI</strong> at UT Dallas, I’m driven by making ML systems that are not just smart but stable and interpretable.</p>
 </section>
 
 <section id="skills">
-  <h2>Skills</h2>
+  <h2>Skills & Tools</h2>
   <div class="skills">
-    <div class="card"><strong>Languages</strong><br>Python, Java, C++, SQL</div>
-    <div class="card"><strong>ML & AI</strong><br>scikit-learn, PyTorch, ARIMA, Prophet, SHAP</div>
-    <div class="card"><strong>Data & Infra</strong><br>Pandas, NumPy, NiFi, ETL</div>
-    <div class="card"><strong>Visualization</strong><br>Tableau, Power BI</div>
-    <div class="card"><strong>DevOps</strong><br>Docker, Git, CI/CD</div>
+    <div class="card"><strong>Languages:</strong><br>Python, Java, C++, SQL</div>
+    <div class="card"><strong>ML & AI:</strong><br>scikit-learn, PyTorch, ARIMA, Prophet, SHAP</div>
+    <div class="card"><strong>Data & Infrastructure:</strong><br>Pandas, NumPy, NiFi, ETL Pipelines</div>
+    <div class="card"><strong>Visualization:</strong><br>Tableau, Power BI</div>
+    <div class="card"><strong>DevOps:</strong><br>Docker, Git, CI/CD</div>
   </div>
 </section>
 
 <section id="projects">
   <h2>Live Projects</h2>
-
-  <div class="card">
-    <h3>FraudShield – Real-Time Ad Fraud Detection</h3>
-    <p>Platform analyzing <strong>10M+ clickstream events/day</strong> to flag invalid traffic. Python + SQL ingestion, Tableau dashboards, and experiments have cut fraud by 15%. Auto-alerts coming soon.</p>
-  </div>
-
-  <div class="card">
-    <h3>AdGuard AI – Mobile Ads Abuse Prevention</h3>
-    <p>Pipeline for Android ad-traffic abuse: ETL on 100GB/day logs, ARIMA/Prophet forecasts, Spring Boot APIs serving risk scores. Precision up 18% since MVP; streaming inference next.</p>
-  </div>
-
-  <div class="card">
-    <h3>TrackIt Live – Personal Finance App</h3>
-    <p>Upgrading CLI into Flask web app with spend categorization & Plotly charts. Roadmap: goal tracker and monthly email digest.</p>
-  </div>
-
-  <div class="card">
-    <h3>ML Ops for Fraud Models @ DXC</h3>
-    <p>Operating pipelines handling <strong>5M+ events/day</strong>, monitoring drift and KPIs. Achieved ~95% precision; CI/CD reduced rollbacks 25%. Next: canary releases with anomaly explainers.</p>
+  <div class="projects-grid">
+    <div class="card">
+      <h3>FraudShield – Real-Time Ad Fraud Detection</h3>
+      <p>Platform processes <strong>10M+ clickstream events/day</strong> to flag invalid traffic. Built ingestion pipelines in Python & SQL, visualized with Tableau dashboards. Empirical experiment runs cut fraud by ~15%. Auto-alerts still under work.</p>
+    </div>
+    <div class="card">
+      <h3>AdGuard AI – Mobile Ads Abuse Prevention</h3>
+      <p>Designed full pipeline: ETL on ~100GB/day of Android ad logs, ARIMA/Prophet to forecast anomalies, APIs serving risk scores. Precision up 18% since first version; streaming inference coming next.</p>
+    </div>
+    <div class="card">
+      <h3>TrackIt Live – Personal Finance App</h3>
+      <p>Evolving from CLI to Flask web app; spend categorization via Pandas, visualizations via Plotly. Roadmap: goal tracking and monthly summary emails.</p>
+    </div>
+    <div class="card">
+      <h3>ML Ops for Fraud Models @ DXC</h3>
+      <p>Active production pipelines handling ~5M events/day, drift monitoring & KPIs ensure ~95% precision. CI/CD updates reduced rollback incidents by 25%; working towards canary-releases + explainers.</p>
+    </div>
   </div>
 </section>
 
